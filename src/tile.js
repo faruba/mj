@@ -1,8 +1,9 @@
 
 class Tile {
-    constructor(type, subType) {
+    constructor(type, subType, isShow) {
         this.type = type;
         this.subType = subType;
+        this.isShow = isShow;
     }
     isSame(tiles){
         return tiles.every( title => (tile.type == this.type && tile.subType == this.subType)
@@ -13,7 +14,6 @@ class Tile {
     }
 }
 
-function
 
 function genTile() {
 

@@ -17,4 +17,5 @@ module.export = {
         hua: { id:6, num:1, sub:[17,18,19,20,21,22,23,24]},
     },
     SubType,
+    
 }
