@@ -1,0 +1,39 @@
+{
+  "name": "g3",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "async": "*",
+    "babel-core": "*",
+    "benchmark": "^2.1.4",
+    "lodash": "^4.13.1",
+    "mocha": "*",
+    "moment": "^2.13.0",
+    "mongodb": "^2.2.11",
+    "nyc": "*",
+    "pomelo": "*",
+    "redis": "^2.7.1",
+    "rfr": "^1.2.3",
+    "should": "*",
+    "v8-profiler": "^5.7.0"
+  },
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "should-sinon": "0.0.5",
+    "sinon": "^3.2.1",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "test": "nyc -x game-modules -x node_modules _mocha --compilers js:babel-register --reporter dot --recursive && nyc report --reporter=html",
+    "start": "pomelo start",
+    "mocha": "mocha -S",
+    "format": "standard --verbose --fix",
+    "mocha-watch": "mocha -S watch"
+  },
+  "author": "faruba",
+  "license": "ISC",
+  "description": ""
+}
